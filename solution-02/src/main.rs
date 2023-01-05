@@ -43,7 +43,7 @@ fn round_score(opp_shape: Shape, outcome: Outcome) -> i32 {
 }
 
 fn main() -> io::Result<()> {
-    let file = File::open("input.txt")?;
+    let file = File::open("test-input.txt")?;
     let reader = BufReader::new(file);
     let mut total_score: i32 = 0;
     for line in reader.lines() {
